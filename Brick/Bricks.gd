@@ -14,6 +14,8 @@ var B = Vector2(90,30)
 func _ready():
 	start_bricks()
 
+
+
 func start_bricks():
 	for c in get_children():
 		c.queue_free()
@@ -27,4 +29,5 @@ func start_bricks():
 			brick.col = w
 			add_child(brick)
 			brick.start_brick()
+
 
